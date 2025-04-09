@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+import java.util.Map;
 
-public record respuestaTipoCambio() {
+public record respuestaTipoCambio(
+        String result,
+        String base_code,
+        Map<String,
+                Double> conversion_rates
+) {
 }

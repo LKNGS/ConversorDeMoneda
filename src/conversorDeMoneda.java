@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class conversorDeMoneda {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
@@ -10,28 +9,28 @@ public class Main {
         do {
             mostrarMenu();
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpia el buffer del scanner
+            scanner.nextLine();
 
             if (opcion >= 1 && opcion <= 6) {
-                Object Conversor;
-                Conversor.realizarConversion(opcion, scanner);
+                conversor.realizarConversion(opcion, scanner);
             } else if (opcion == 7) {
-                System.out.println("¡Hasta luego!");
+                System.out.println("¡Gracias, vuelve pronto!");
             } else {
-                System.out.println("Opción no válida.");
+                System.out.println("Lo siento, opción no válida.");
             }
         } while (opcion != 7);
     }
 
     private static void mostrarMenu() {
-        System.out.println("\n--- Conversor de Moneda ---");
-        System.out.println("1. Peso colombiano a Dólar");
-        System.out.println("2. Dólar a Peso colombiano");
-        System.out.println("3. Bolívar a Dólar");
-        System.out.println("4. Dólar a Bolívar");
-        System.out.println("5. Peso mexicano a Dólar");
-        System.out.println("6. Dólar a Peso mexicano");
-        System.out.println("7. Salir");
-        System.out.print("Seleccione una opción: ");
+        System.out.println("\n--Bienvenid@--");
+        System.out.println("\n*** Conversor de Moneda ***");
+        System.out.println("1. Real brasileño --> Dólar :D");
+        System.out.println("2. Dólar --> Real brasileño :D");
+        System.out.println("3. Peso argentino --> Dólar :D");
+        System.out.println("4. Dólar --> Peso argentino :D");
+        System.out.println("5. Peso colombiano --> Dólar :D");
+        System.out.println("6. Dólar --> Peso colombiano :D");
+        System.out.println("7. Salir\n");
+        System.out.print("**Porfavor digite una opción: ");
 }
 }
